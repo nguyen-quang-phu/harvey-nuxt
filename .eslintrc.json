@@ -1,0 +1,41 @@
+{
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": [
+      "tsconfig.json"
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "__test__/**"
+      ],
+      "plugins": [
+        "vitest"
+      ],
+      "extends": [
+        "plugin:vitest/recommended"
+      ]
+    },
+    {
+      "files": [
+        "e2e/**"
+      ],
+      "plugins": [
+        "vitest"
+      ],
+      "extends": [
+        "plugin:playwright/recommended"
+      ]
+    }
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "@nuxt/eslint-config",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ]
+}
