@@ -1,8 +1,6 @@
-<script setup>
-const abc = "hello"
+<script setup lang="ts">
 </script>
+
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <AppAvatar src="https://github.com/radix-vue.png" alt="@radix-vue" fallback="XXX"></AppAvatar>
 </template>
