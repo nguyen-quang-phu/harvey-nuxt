@@ -1,10 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+  },
   typescript: {
     strict: true,
   },
-  modules: ["@nuxt/test-utils/module", "@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  modules: [
+    "@nuxt/test-utils/module",
+    "@nuxtjs/tailwindcss",
+    "shadcn-nuxt",
+    "nuxt-svgo",
+  ],
+  svgo: {
+    defaultImport: "component",
+  },
   shadcn: {
     /**
      * Prefix for all the imported component

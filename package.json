@@ -3,13 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "add-component":"pnpm dlx shadcn-vue@latest add ",
+    "add-component": "pnpm dlx shadcn-vue@latest add ",
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "lint": "eslint .",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "lint": "eslint .",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
@@ -36,6 +36,7 @@
     "eslint-plugin-tailwindcss": "^3.15.1",
     "eslint-plugin-vitest": "^0.3.26",
     "happy-dom": "^14.3.3",
+    "nuxt-svgo": "^4.0.0",
     "playwright-core": "^1.42.1",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
